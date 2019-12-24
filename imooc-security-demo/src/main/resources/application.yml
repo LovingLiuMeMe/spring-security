@@ -23,5 +23,20 @@ spring:
         max-wait: -1ms
         max-idle: 10
         min-idle: 0
+# 配置自定义登录页面
+imooc:
+  security:
+    browser:
+      # login-page: /demo-signIn.html
+      login-type: JSON # REDIRECT
+# 配置应用级的图形验证参数
+    code:
+      # login-page: /demo-signIn.html
+      image:
+        width: 70
+        height: 30
+        length: 6
+        expire: 120
+        url: /user,/user/*
 server:
   port: 8001

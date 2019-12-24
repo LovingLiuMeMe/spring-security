@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
+
 /**
  * @Author：LovingLiu
  * @Description: Spring 会将 实现了ConstraintValidator接口的类自动注入到容器中。不用@Component

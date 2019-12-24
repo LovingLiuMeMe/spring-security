@@ -3,9 +3,7 @@ package com.imooc.aspect;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
@@ -14,8 +12,8 @@ import java.util.Date;
  * @Description: 解决Inteceptor无法拿到请求参数（User user）user无法拿到
  * @Date：Created in 2019-12-16
  */
-@Aspect
-@Component
+//@Aspect
+//@Component
 @Slf4j
 public class TimeAspect {
     @Pointcut("execution(public * com.imooc.controller.UserController.* (..))")

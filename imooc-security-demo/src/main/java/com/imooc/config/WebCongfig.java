@@ -5,7 +5,6 @@ import com.imooc.interceptor.TimeInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.AsyncSupportConfigurer;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
@@ -18,7 +17,7 @@ import java.util.List;
  * @Description: 不继承Filter接口 实现Filter拦截器(可适用于第三方Filter)
  * @Date：Created in 2019-12-16
  */
-@Configuration
+// @Configuration
 public class WebCongfig extends WebMvcConfigurationSupport {
     @Autowired
     private TimeInterceptor timeInterceptor;
